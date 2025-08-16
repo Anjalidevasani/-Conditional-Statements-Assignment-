@@ -15,12 +15,12 @@ if(age>60 && isWeekday && !isFestivalWeek){
     console.log(finalPrice);
 }
 //  case 2: student discount
-else if(age<25 && isStudent && hasStudentID && currentMonth !== "december"){
+else if(age<25 && isStudent && hasStudentID && currentMonth !== "December"){
     finalPrice = normalPrice - (normalPrice * 2/10);
     console.log(finalPrice);
 }
 // case 3: sunday discount
-else if(dayOfWeek === "sunday"){
+else if(dayOfWeek === "Sunday"){
     finalPrice = normalPrice -(normalPrice*1/10);
     console.log(finalPrice);
 }
@@ -61,4 +61,41 @@ else{
     finalAmount = orderAmount
     console.log("Benefit: none")
     console.log("Final amount to pay:", finalAmount);
+}
+
+//  question 3:code
+
+//  inputs
+let loanAmount = 20000;
+let borrowersCreditCardScore = 700;
+let incomePerMonth = 60000;
+let isGovernmentEmployee = true;
+let iscurrentMonth = "december";
+let interestRate = 0;
+//  case 1: loan > 10 lakhs and credit score > 800
+if (loanAmount > 100000 && borrowersCreditCardScore > 800){
+    interestRate = 7;
+    console.log("Condition 1: Loan > 10 lakhs and Credit Score > 800 -> interest Rate  is 7%");
+    if (isGovernmentEmployee){
+        interestRate -= 0.5;
+        console.log("Government Employee -> Extra 0.5% is reduced")
+    }
+}
+// case 2: Credit score between 650 and 800, and income > 50k
+else if (borrowersCreditCardScore >=650 && borrowersCreditCardScore<=800 && incomePerMonth > 50000){
+    interestRate = 9;
+    console.log("Condition 2: Credit Score between 650/800 and Income > 50000 -> interest Rate 9%");
+    if (isGovernmentEmployee){
+        interestRate -= 0.5;
+        console.log("Government Employee -> Extra 0.5% is reduced")
+    }
+}
+// case 3: festival discount in December
+else if (iscurrentMonth){
+    interestRate = interestRate - 1;
+      console.log("Condition 3: Loan in December -> 1% Festival Discount applied");
+}
+// case 4 : none
+else {
+    console.log("Condition 4: No special condition -> normal interest Rate 10%");
 }
