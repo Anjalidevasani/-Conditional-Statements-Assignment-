@@ -145,3 +145,37 @@ else if (destination === "anotherState"){
 else {
     console.log("enter the correct destination");
 }
+
+// question 5 : code
+
+// inputs
+let gymMonthlyFee = 3000;
+let membershipType = "silver";
+let attendanceDays = 16;
+let paymentMode = "UPI";
+let cashback = 0;
+let finalPayableAmount = gymMonthlyFee;
+// case 1: gold membership
+if(membershipType === "gold" && attendanceDays >20 && paymentMode === "UPI"){
+    cashback = 500;
+    finalPayableAmount = gymMonthlyFee - cashback;
+    console.log( finalPayableAmount);
+}
+// case 2:silver membership
+else if(membershipType === "silver" && attendanceDays > 15 && paymentMode === "UPI"){
+    cashback = 300;
+    finalPayableAmount= gymMonthlyFee - cashback;
+    console.log( finalPayableAmount);
+}
+// case 3 : Bronze membership
+else if (membershipType === "bronze" && attendanceDays > 10 && paymentMode === "debitCard"){
+    cashback = 100;
+    finalPayableAmount = gymMonthlyFee - cashback;
+    console.log( finalPayableAmount);
+}
+// case 4 : no membership
+else{
+    cashback = 0;
+    finalPayableAmount = gymMonthlyFee - cashback ;
+    console.log( finalPayableAmount);
+}
