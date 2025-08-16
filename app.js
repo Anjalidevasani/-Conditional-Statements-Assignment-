@@ -179,3 +179,89 @@ else{
     finalPayableAmount = gymMonthlyFee - cashback ;
     console.log( finalPayableAmount);
 }
+
+// question 6 :code
+// inputs
+let cupSize = "medium";
+let addOns = "flavored Syrup";
+let addOncost =  0;
+let cupSizeCost = 0;
+let totalbill = cupSizeCost+addOncost;
+switch(cupSize+"-"+addOns){
+    case "small-extra Shot": 
+        addOncost = 30;
+        cupSizeCost = 100;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "small-flavored Syrup":
+        addOncost = 35;
+        cupSizeCost = 100;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "small-whipped Cream":
+        addOncost = 40;
+        cupSizeCost = 100;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+     case "medium-extra Shot":
+        addOncost = 30;
+        cupSizeCost = 150;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "medium-flavored Syrup":
+        addOncost = 35;
+        cupSizeCost = 150;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "medium-whipped Cream":
+        addOncost = 40;
+        cupSizeCost = 150;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+     case "large-extra Shot":
+        addOncost = 30;
+        cupSizeCost = 200;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "large-flavored Syrup":
+        addOncost = 35;
+        cupSizeCost = 200;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "large-whipped Cream":
+        addOncost = 40;
+        cupSizeCost = 200;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+     case "extraLarge-extra Shot":
+        addOncost = 30;
+        cupSizeCost = 250;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "extarLarge-flavored Syrup":
+        addOncost = 35;
+        cupSizeCost = 250;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    case "extraLarge-whipped Cream":
+        addOncost = 40;
+        cupSizeCost = 250;
+        totalbill = cupSizeCost + addOncost;
+        console.log(totalbill);
+    break;
+    default:
+        console.log("invalid cup size or Invalid add-on");
+    break;
+
+}
