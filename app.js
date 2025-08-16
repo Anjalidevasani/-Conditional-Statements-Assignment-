@@ -99,3 +99,49 @@ else if (iscurrentMonth){
 else {
     console.log("Condition 4: No special condition -> normal interest Rate 10%");
 }
+
+// question 4:code
+
+//  inputs
+
+let orderValue = 3000;
+let destination = "outsideTheCity";
+let isPriority = true;
+let isPremiumMember = true;
+let isWeekend = true;
+let shippingCharge = 0; 
+// case 1: delivery within same city and priority
+if (destination === "sameCity" && isPriority){
+    if(orderValue > 2000){
+        shippingCharge = 0;
+        console.log("condition 1: same city and have priority and ordervalue > ₹2000 means free shippping");
+    }else {
+        shippingCharge = 50;
+        console.log("condition 1: same city and have priority and ordervalue <= ₹2000 means  shippping charger is ₹50");
+    }
+
+}
+// case 2: delivery outside city but within same state
+else if(destination === "outsideTheCity"){
+    if(orderValue > 5000){
+        shippingCharge = 0;
+        console.log("condition 2: outside the city but same state and have priority and ordervalue > ₹5000 means free shippping");
+    }else {
+        shippingCharge = 100;
+        console.log("condition 2: outside th city but same state and have priority and ordervalue <= ₹5000 means  shippping charger is ₹100");
+    }
+}
+//  case 3: delivery to another state 
+else if (destination === "anotherState"){
+    if (isPremiumMember && isWeekend){
+        shippingCharge = 100;
+        console.log("cndition 3 : anthore state and has premiun and it is weekend means shipping charge is ₹100");
+    }else {
+       shippingCharge = 200;
+       console.log("condition 3: another state no premiun means shipping charge ₹200");
+    }
+}
+// 
+else {
+    console.log("enter the correct destination");
+}
