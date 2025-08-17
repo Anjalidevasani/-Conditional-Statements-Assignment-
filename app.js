@@ -623,3 +623,56 @@ else if (yearsOfExperience<2){
 }else{
     console.log("Invalid Input");
 }
+
+// question 13: code 
+
+// inputs
+let temperature = 14;
+let isRaining = false;
+// condition 1: temperature above 40 and weather condition is Extremely Hot 
+if (temperature > 40){
+    // condition :if raining 
+    if(isRaining === true){
+        console.log("Weather Condition: Extremely Hot and Rainy");
+    } else {
+        console.log("Weather Condition: Extremely Hot");
+    }
+}
+// condition 2: temperature 30 - 39 and weather condition is Hot 
+else if (temperature >= 30 && temperature <= 39){
+     // condition :if raining 
+     if(isRaining === true){
+        console.log("Weather Condition: Hot and Rainy");
+    } else {
+        console.log("Weather Condition: Hot");
+    }
+}
+// condition 3: temperature 20 - 29 and weather condition is Warm 
+else if (temperature >= 20 && temperature <=29){
+     // condition :if raining 
+     if(isRaining === true){
+        console.log("Weather Condition: Warm and Rainy");
+    } else {
+        console.log("Weather Condition: Warm");
+    }
+}
+// condition 4: temperature 10 - 19 and weather condition is cool 
+else if (temperature >= 10 && temperature <= 19){
+     // condition :if raining 
+     if(isRaining === true){
+        console.log("Weather Condition: Cool and Rainy");
+    } else {
+        console.log("Weather Condition: Cool");
+    }
+}
+// condition 5: temperature below 10 and weather condition is cold
+else if (temperature<10){
+     // condition :if raining 
+    if(isRaining === true){
+        console.log("Weather Condition: Cold and Rainy");
+    } else {
+        console.log("Weather Condition: Cold");
+    }
+}else{
+    console.log("Invalid Temperature");
+}
