@@ -571,3 +571,55 @@ if (percentage>=90 && percentage<=100){
 }else{
     console.log("Enter valid percentage ")
 }
+
+// question 12:code
+// inputs
+let yearsOfExperience = 12;
+let isJoinedInDecember = true;
+// condition 1:  experience more than 15 years 
+if(yearsOfExperience>15){
+    //  employee joined in December
+    if(isJoinedInDecember === true){
+        console.log(`Bonus: ₹50,000 and extra ₹2000 -> Total ₹52,000`);
+    }else{
+        console.log(`Bouns: ₹50,000`);
+    }
+}
+// condition 2:  experience 10 -15 years 
+else if (yearsOfExperience>=10 && yearsOfExperience<=15){
+     //  employee joined in December
+    if(isJoinedInDecember === true){
+        console.log(`Bonus: ₹30,000 and extra ₹2000 -> Total ₹32,000`);
+    }else{
+        console.log(`Bouns: ₹30,000`);
+    }
+}
+// condition 3:  experience 5 - 9 years 
+else if (yearsOfExperience>=5 && yearsOfExperience<=9){
+     //  employee joined in December
+    if(isJoinedInDecember === true){
+        console.log(`Bonus: ₹20,000 and extra ₹2000 -> Total ₹22,000`);
+    }else{
+        console.log(`Bouns: ₹20,000`);
+    }
+}
+// condition 4:  experience 2 - 4 years 
+else if (yearsOfExperience>=2 && yearsOfExperience<=4){
+     //  employee joined in December
+    if(isJoinedInDecember === true){
+        console.log(`Bonus: ₹10,000 and extra ₹2000 -> Total ₹12,000`)
+    }else{
+        console.log(`Bouns: ₹10,000`)
+    }
+}
+// condition 5:  experience less than 2 years 
+else if (yearsOfExperience<2){
+     //  employee joined in December
+    if(isJoinedInDecember === true){
+        console.log(`Bonus: ₹5,000 and extra ₹2000 -> Total ₹7,000`)
+    }else{
+        console.log(`Bouns: ₹5,000`)
+    }
+}else{
+    console.log("Invalid Input");
+}
