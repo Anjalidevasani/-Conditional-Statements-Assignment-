@@ -416,3 +416,65 @@ switch(category){
 
 }
 
+// question 9: code
+
+let bookCategory = "magazine";
+let finePerday = 5;
+let overdueDays = 7;
+let isUserStudent = true;
+let totalFine = 0;
+switch(bookCategory){
+    // case 1: fiction category
+    case "fiction":
+        // switch on is user student
+        switch(isUserStudent){
+            case true:
+                totalFine = (overdueDays * finePerday)/2;
+                break;
+            case false:
+                totalFine = overdueDays * finePerday;
+                break;
+        }
+        console.log(`Fiction book fine: ₹${totalFine}`);
+        break;
+     // case 2: Non-fiction category
+    case "non-fiction":
+         switch(isUserStudent){
+            case true:
+                totalFine = (overdueDays * finePerday)/2;
+                break;
+            case false:
+                totalFine = overdueDays * finePerday;
+                break;
+        }
+        console.log(`Non-Fiction book fine: ₹${totalFine}`);
+        break;
+     // case 3: Reference book category
+    case "reference":
+         switch(isUserStudent){
+            case true:
+                totalFine = (overdueDays * finePerday)/2;
+                break;
+            case false:
+                totalFine = overdueDays * finePerday;
+                break;
+        }
+        console.log(`Reference book fine: ₹${totalFine}`);
+        break;
+     // case 4: magazine category
+    case "magazine":
+         switch(isUserStudent){
+            case true:
+                totalFine = (overdueDays * finePerday)/2;
+                break;
+            case false:
+                totalFine = overdueDays * finePerday;
+                break;
+        }
+        console.log(`Magazine book fine: ₹${totalFine}`);
+        break;
+    default:
+        console.log("Invalid category");
+        break;
+}
+
