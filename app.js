@@ -676,3 +676,61 @@ else if (temperature<10){
 }else{
     console.log("Invalid Temperature");
 }
+
+// question 14: code
+
+// inputs 
+let itemsAmount = 5000;
+let discount =0;
+let finalItemsAmount = 0;
+let isBirthday = true;
+if (itemsAmount > 20000){
+    if(isBirthday === true){
+        discount = itemsAmount * (0.25 + 0.05);
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with extra discount: ₹${finalItemsAmount}`)
+    }else{
+        discount = itemsAmount * 0.25;
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with discount above 20,000 :₹${finalItemsAmount}`)
+    }
+}else if (itemsAmount >=15000 && itemsAmount <= 19999){
+     if(isBirthday === true){
+        discount = itemsAmount * (0.20 + 0.05);
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with extra discount: ₹${finalItemsAmount}`)
+    }else{
+        discount = itemsAmount * 0.20;
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with discount between  ₹15,000 - ₹19,999 :₹${finalItemsAmount}`)
+    }
+}else if (itemsAmount >=10000 && itemsAmount <= 14999){
+     if(isBirthday === true){
+        discount = itemsAmount * (0.15 + 0.05);
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with extra discount: ₹${finalItemsAmount}`)
+    }else{
+        discount = itemsAmount * 0.15;
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with discount between  ₹10,000 - ₹14,999 :₹${finalItemsAmount}`)
+    }
+}else if (itemsAmount >=5000 && itemsAmount <= 9999){
+     if(isBirthday === true){
+        discount = itemsAmount * (0.10 + 0.05);  
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with extra discount: ₹${finalItemsAmount}`)
+    }else{
+        discount = itemsAmount * 0.10;
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with discount between  ₹5,000 - ₹9,999 :₹${finalItemsAmount}`)
+    }
+}else {
+     if(isBirthday === true){
+        discount = itemsAmount * 0.05;
+        finalItemsAmount = itemsAmount - discount;
+        console.log(`Final items amount with extra discount: ₹${finalItemsAmount}`)
+    }else{
+        finalItemsAmount = itemsAmount;
+        console.log(`Final items amount with no discount: ₹${finalItemsAmount}`)
+    }
+}
