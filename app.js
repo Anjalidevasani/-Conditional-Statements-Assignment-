@@ -547,6 +547,27 @@ switch(bookingCategory){
     default:
         console.log("Invalid booking category");
     break;
+}
 
+//  question 11 : code 
 
+//  inputs
+let percentage = 50;
+let finalYear = true;
+if (percentage>=90 && percentage<=100){
+    console.log("Grade A");
+}else if (percentage>=80 && percentage<=89){
+    console.log("Grade B");
+}else if (percentage>=70 && percentage<=79){
+    console.log("Grade C");
+}else if (percentage>=60 && percentage<=69){
+    console.log("Grade D");
+}else if (percentage>=50 && percentage<=59){
+    console.log("Grade E");
+}else if (percentage>=45 && percentage<=49 && finalYear === true){
+    console.log("They get a chance for re-evaluation");
+}else if(percentage<50){
+    console.log("Fail");
+}else{
+    console.log("Enter valid percentage ")
 }
