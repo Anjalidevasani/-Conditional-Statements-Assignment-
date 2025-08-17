@@ -734,3 +734,53 @@ if (itemsAmount > 20000){
         console.log(`Final items amount with no discount: ₹${finalItemsAmount}`)
     }
 }
+
+// question 15:code
+
+// inputs
+let completionTime = 4;
+let isRunnerAge = 17;
+let marathonCategory;
+if (completionTime < 2){
+    marathonCategory = "Elite";
+    if(isRunnerAge < 18){
+        marathonCategory += " + Youth Badge";
+        console.log(`Runner Category: ${marathonCategory}`);
+    }else{
+        console.log(`Runner Category: ${marathonCategory}`);
+    }
+}else if (completionTime >= 2 && completionTime < 3){
+      marathonCategory = "Advanced";
+    if(isRunnerAge < 18){
+        marathonCategory += " + Youth Badge";
+        console.log(`Runner Category: ${marathonCategory}`);
+    }else{
+        console.log(`Runner Category: ${marathonCategory}`);
+    }
+}else if (completionTime >= 3 && completionTime < 4){
+      marathonCategory = "Intermediate";
+    if(isRunnerAge < 18){
+        marathonCategory += " + Youth Badge";
+        console.log(`Runner Category: ${marathonCategory}`);
+    }else{
+        console.log(`Runner Category: ${marathonCategory}`);
+    }
+}else if (completionTime >= 4 && completionTime < 5){
+      marathonCategory = "Beginner";
+    if(isRunnerAge < 18){
+        marathonCategory += " + Youth Badge";
+        console.log(`Runner Category: ${marathonCategory}`);
+    }else{
+        console.log(`Runner Category: ${marathonCategory}`);
+    }
+}else{
+    marathonCategory = "Novice";
+    if (age > 18){
+        marathonCategory += " + Youth Badge";
+        console.log(`Runner Category: ${marathonCategory}`);
+    }else{
+        console.log(`Runner Category: ${marathonCategory}`);
+    }
+}
+
+
