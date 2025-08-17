@@ -478,3 +478,75 @@ switch(bookCategory){
         break;
 }
 
+// question 10: code
+
+// inputs
+let bookingCategory = "VIP";
+let ticketPrice = 450;
+let numberOfTickets = 4;
+let isweekend = false;
+let totalTicketprice = ticketPrice * numberOfTickets;
+//  booking category
+switch(bookingCategory){
+    // case 1:standard booking category
+    case "standard":
+        // switch cases if it is weekend or not
+        switch(isweekend){
+            case true:
+                totalTicketprice =numberOfTickets * (ticketPrice + (ticketPrice * 0.20));
+                console.log(`standard category total Ticket cost: ₹${totalTicketprice}`);
+                break;
+            case false:
+                totalTicketprice = numberOfTickets * ticketPrice;
+                console.log(`standard category total Ticket cost: ₹${totalTicketprice}`);
+                break;     
+        }
+    break;
+     // case 2:premium booking category
+    case "premium":
+          // switch cases if it is weekend or not
+        switch(isweekend){
+            case true:
+                totalTicketprice =numberOfTickets * (ticketPrice + (ticketPrice * 0.20));
+                console.log(`premium category total Ticket cost: ₹${totalTicketprice}`);
+                break;
+            case false:
+                totalTicketprice = numberOfTickets * ticketPrice;
+                console.log(`premium category total Ticket cost: ₹${totalTicketprice}`);
+                break;     
+        }
+    break;
+     // case 3: VIP booking category
+    case "VIP":
+          // switch cases if it is weekend or not
+        switch(isweekend){
+            case true:
+                totalTicketprice =numberOfTickets * (ticketPrice + (ticketPrice * 0.20));
+                console.log(`VIP category total Ticket cost: ₹${totalTicketprice}`);
+                break;
+            case false:
+                totalTicketprice = numberOfTickets * ticketPrice;
+                console.log(`VIP category total Ticket cost: ₹${totalTicketprice}`);
+                break;     
+        }
+    break;
+     // case 4:balcony booking category
+    case "balcony":
+          // switch cases if it is weekend or not
+        switch(isweekend){
+            case true:
+                totalTicketprice =numberOfTickets * (ticketPrice + (ticketPrice * 0.20));
+                console.log(`Balcony category total Ticket cost: ₹${totalTicketprice}`);
+                break;
+            case false:
+                totalTicketprice = numberOfTickets * ticketPrice;
+                console.log(`Balcony category total Ticket cost: ₹${totalTicketprice}`);
+                break;     
+        }
+    break;
+    default:
+        console.log("Invalid booking category");
+    break;
+
+
+}
