@@ -265,3 +265,65 @@ switch(cupSize+"-"+addOns){
     break;
 
 }
+
+// question 7 : code
+
+// inputs
+let rechargePlan = "comboPack";
+let isSpecialWeek = true;
+let cost = 0;
+let validity = 0;
+// plan and special week
+switch(rechargePlan + "-" + isSpecialWeek){
+    // case 1: talktime plan and special week
+    case "talktime-true":
+        cost = 150;
+        validity = 28 + 2;
+        console.log(`selected plan: Talktime -> ₹150 and validity for 28 days and extra 2 days as special week days`);
+        break;
+    // case 2: talktime plan no special week
+    case "talktime-false":
+        cost = 150;
+        validity = 28;
+        console.log(`selected plan: Talktime -> ₹150 and validity for 28 days`);
+        break;
+    // case 3 : dataPack plan and special week
+    case "dataPack-true":
+        cost = 250;
+        validity = 30 + 2;
+        console.log(`Selected plan: Data Pack -> ₹250 and validity for 30 days and extra 2 days as special week days`);
+        break;
+    // case 4: dataPak plan no special week
+    case "dataPack-false":
+        cost = 250;
+        validity = 30;
+        console.log(`Selected plan: Data Pack -> ₹250 and validity for 30 days`);
+        break
+    // case 5:combo Pack plan and special week
+    case "comboPack-true":
+        cost = 350;
+        validity = 31 + 2;
+        console.log(`Selected plan: Combo Pack -> ₹350 and validity for 31 days and extra 2 days as special week days `);
+        break;
+    // case 6: combo pack no special week
+     case "comboPack-false":
+        cost = 350;
+        validity = 31;
+        console.log(`Selected plan: Combo Pack -> ₹350 and validity for 31 days`);
+        break;
+    // case 7: unlimited plan and special week
+    case "unlimitedPlan-true":
+        cost = 500;
+        validity = 84 + 2;
+        console.log(`Selected plan: unlimited plan -> ₹500 and validity for 84 days and extra 2 days as special week days`);
+        break;
+    // case 8: unlimited plan no special week
+    case "unlimitedPlan-false":
+        cost = 500;
+        validity = 84;
+        console.log(`Selected plan: unlimited plan -> ₹500 and validity for 84 days`);
+        break;
+    default:
+        console.log("Invalid Plan");
+        break;  
+}
