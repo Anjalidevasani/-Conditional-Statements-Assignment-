@@ -327,3 +327,92 @@ switch(rechargePlan + "-" + isSpecialWeek){
         console.log("Invalid Plan");
         break;  
 }
+
+//  question 8 : code
+
+//  inputs 
+let category = "lunch";
+let item = "vegthali";
+let itemQuantity = 1;
+let itemCost = 0;
+let totalcost = itemCost * itemQuantity;
+// switch on category
+switch(category){
+    // case 1: breakfast category
+    case "breakfast":
+        // switch on  breakfast items
+        switch(item){
+            case "idli":
+                itemCost = 30;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Breakfast -> Idli x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "dosa":
+                itemCost = 45;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Breakfast -> Dosa x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "paratha":
+                itemCost = 55;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Breakfast -> paratha x${itemQuantity} = ₹${totalcost}`);
+                break;
+            default:
+                console.log("Item not available in breakfast menu");
+                break;
+        }
+    break;
+    // case 2: lunch category
+    case "lunch":
+        // switch on lunch items
+        switch(item){
+            case "vegthali":
+                itemCost = 150;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Lunch -> vegthali x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "fried rice":
+                itemCost = 100;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Lunch -> fried rice x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "panner briyani":
+                itemCost = 150;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Lunch -> panner briyani x${itemQuantity} = ₹${totalcost}`);
+                break;
+            default:
+                console.log("Item not available in lunch menu");
+                break;
+        }
+    break;
+    // case 3: dinner category
+    case "dinner":
+        //  switch on dinner items
+        switch(item){
+            case "chicken briyani":
+                itemCost = 250;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Dinner ->chicken briyani x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "veg briyani":
+                itemCost = 200;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Dinner ->veg briyani x${itemQuantity} = ₹${totalcost}`);
+                break;
+            case "roti":
+                itemCost = 80;
+                totalcost = itemCost * itemQuantity;
+                console.log(`Dinner ->roti x${itemQuantity} = ₹${totalcost}`);
+                break;
+            default:
+                console.log("Item not available in dinner menu");
+                break;
+        }
+    break;
+    default:
+        console.log("category or item is not avaliable");
+        break;
+
+}
+
